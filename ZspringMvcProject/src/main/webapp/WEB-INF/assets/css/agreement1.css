@@ -1,19 +1,80 @@
 @charset "UTF-8";
 
+#header {
+	 
+	 text-align: center;
+}
 
-
-.terms_box {
+#langSelect {
 	
-	width: 600px;
-	height: auto;
-	margin-left: auto;
+	margin-right: 150px;
+	margin-left: 800px;
+	border: 8px solid sky blue;
+}
+
+#chk_all{
+	
 	margin-right: auto;
-	margin: 2em 0 1em 0;
-	border: 1px solid black;
-	padding: 0 8px;
+	margin-left: 525px;
+	
+}
+
+#termsService{
+	
+	margin-right: auto;
+	margin-left: 485px;
+}
+
+.input_chk {
 	
 	
 }
+
+
+.article{
+	
+	width: 650px;
+	height: auto;
+	margin-left: 450px;
+	margin-right: 500px;
+	
+}
+
+.article__title{
+	
+	width: 600px;
+	height: auto;
+	margin-left: 450px;;
+	margin-right: auto;
+	overflow:auto; height: 150px;
+}
+
+
+.div {
+	
+	margin-right: 400px;
+}
+
+
+
+.article__title {
+   width: auto;;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.article__text {
+   width: auto;;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+
 
 input::-moz-focus-inner {
 	border: 0;
@@ -21,15 +82,18 @@ input::-moz-focus-inner {
 }
 
 
- .select {
+ select, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
 }
 
+
 html {
 		box-sizing: border-box;
+		overflow:auto; height: 2000px;
+		
 	}
 
 	*, *:before, *:after {

@@ -9,10 +9,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 
+
 <%
-if(request.getParameter("signup") != null) {
+if(request.getParameter("join") != null) {
 %>
-<jsp:forward page="WEB-INF/member/memberForm.jsp"></jsp:forward> 
+
+<jsp:forward page="WEB-INF/member/memberForm.jsp"></jsp:forward>    
 <%
   return;
 }
@@ -26,6 +28,7 @@ if(request.getParameter("agreement") != null) {
   return;
 }
 %>
+
 
 
 <html>
@@ -60,7 +63,7 @@ if(request.getParameter("agreement") != null) {
 							
 							<li class="submenu">
 								<a href="#" onclick="location.href='index.jsp?agreement'">회원가입</a>
-								<!-- <a href="#" onclick="location.href='index.jsp?signup'">회원가입</a> -->
+								
 								<ul>
 									<li><a href="left-sidebar.jsp"></a>&nbsp;마이페이지</li>
 								</ul>
