@@ -7,7 +7,7 @@
 
 #langSelect {
 	
-	margin-right: 150px;
+	margin-right: 50px;
 	margin-left: 800px;
 	border: 8px solid sky blue;
 }
@@ -15,38 +15,52 @@
 #chk_all{
 	
 	margin-right: auto;
-	margin-left: 525px;
+	margin-left: 455px;
 	
 }
 
 #termsService{
 	
 	margin-right: auto;
-	margin-left: 485px;
+	margin-left: 415px;
 }
+
 
 .input_chk {
 	
 	
 }
 
-
+#termsPrivacy{
+	
+	margin-right: auto;
+	margin-left: 455px;
+	
+}
+.terms_bx_list{
+	list-style-type:none;
+}
+.terms_box{
+	overflow:scroll;
+	height:300px;
+}
 .article{
 	
 	width: 650px;
 	height: auto;
 	margin-left: 450px;
 	margin-right: 500px;
-	
+
 }
 
 .article__title{
+	
 	
 	width: 600px;
 	height: auto;
 	margin-left: 450px;;
 	margin-right: auto;
-	overflow:auto; height: 150px;
+	
 }
 
 
@@ -185,4 +199,3 @@ html {
 				}
 
 		}
-		

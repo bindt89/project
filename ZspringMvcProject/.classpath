@@ -25,5 +25,15 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/lee/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE.jar" sourcepath="C:/Users/lee/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="spring-web-5.2.8.RELEASE.jar"/>
+			<attribute name="maven.groupId" value="org.springframework"/>
+			<attribute name="maven.artifactId" value="spring-web"/>
+			<attribute name="maven.version" value="5.2.8.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

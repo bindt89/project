@@ -6,8 +6,8 @@
 <!DOCTYPE html>
 <html>
 <head>
- <c:set var="path" value="<%=request.getContextPath() %>"></c:set>
 
+<c:set var="path" value="<%=request.getContextPath() %>"></c:set>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -49,14 +49,14 @@
         
         // 취소 버튼 클릭시 로그인 화면으로 이동
         function goLoginForm() {
-            location.href="LoginForm.jsp";
+            location.href="";
         }
     </script>
 	
 		
 	</head>
  <body>
-	<form action="${path }/member/insert" method="post" name="frm">
+	<form action="${path }/member/prc" method="post"   name="frm">
  
  	<div id="tit">
         <br>
@@ -93,20 +93,8 @@
 					</td>
 				</tr>
                    
-                <tr>
-                    <td id="mai">성별</td> 
-                    <td colspan="1" align="left"> &emsp;
-                        <input type="radio" name="gender" value="남" checked>남
-                        <input type="radio" name="gender" value="여" checked>여
-                    </td>
-                </tr>
+              
                     
-             	<tr>
-					<td id="mai">생년월일</td> 
-					<td colspan="1" align="left"> &emsp;<input type="date" name="birthdate"
-						required="required" class="from-cintol"></td>
-				</tr>
-				
                 <tr>
                     <td id="mai">이메일</td>
                     <td colspan="1" align="left"> &emsp;
@@ -117,6 +105,24 @@
                             <option>gmail.com</option>
                             <option>nate.com</option>                        
                         </select>
+                    </td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+             	<tr>
+					<td id="mai">생년월일</td> 
+					<td colspan="1" align="left"> &emsp;<input type="date" name="birthdate"
+						required="required" class="from-cintol"></td>
+				</tr>
+				
+            	 <tr>
+                    <td id="mai">성별</td> 
+                    <td colspan="1" align="left"> &emsp;
+                        <input type="radio" name="gender" value="남" checked>남
+                        <input type="radio" name="gender" value="여" checked>여
                     </td>
                 </tr>
                     

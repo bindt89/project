@@ -43,12 +43,13 @@ public class MemberController {
 		
 	}
 	
-	@PostMapping("/member/insert")
+	@PostMapping("/member/prc")
 	public String insert (MemberDTO dto)
 	{
 		
 		dao.insertmember(dto);
 		return "redirect:list";
+		
 		
 	}
 	
@@ -86,5 +87,5 @@ public class MemberController {
 		return "redirect:list";
 		
 	}
-	
+
 }

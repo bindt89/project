@@ -28,6 +28,7 @@ onclick="location.href='${path}/member/insertform'">회원가입</button>
 	 <th style="text-align: center;">비밀번호</th>
 	 <th style="text-align: center;">이메일</th>
 	 <th style="text-align: center;">생년월일</th>
+	 <th style="text-align: center;">성별</th>
 	 <th style="text-align: center;">핸드폰</th>
 	 <th style="text-align: center;">주소</th>
 	 <th style="text-align: center;">가입날짜</th>
@@ -43,6 +44,7 @@ onclick="location.href='${path}/member/insertform'">회원가입</button>
 	 <td align="center">${a.pass }</td>
 	 <td align="center">${a.email }</td>
 	 <td align="center">${a.birthdate}</td>
+	 <td align="center">${a.gender }</td>
 	 <td align="center">${a.hp1}</td>
 	 <td align="center">${a.hp2}</td>
 	 <td align="center">${a.hp3}</td>

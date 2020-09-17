@@ -6,24 +6,24 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="member">
 
 	<select id="selectAllDataOfMember" resultType="mdto">
-		select * from members order by num,name,id
+		select * from members order by name asc
 	</select>
 
 	<insert id="insertOfMember" parameterType="mdto">
-		insert into members values(seq_mem.nextval,#{name},#{id},#{pass},sysdate)
+		insert into members values(?,?,?,?,?,?,?,?,sysdate)
 	</insert>
 
-	<select id="selectOfOenMember" parameterType="String" resultType="mdto">
-		select * from members where num=#{num}
+	<select id="selectOfOenMember" parameterType="int" resultType="mdto">
+		select * from members where num=?
 	</select>
 
 	<update id="updateOfMemver" parameterType="mdto">
-		update members set name=#{name},pass=#{pass} where num=#{num}
+		update members set pass=?,hp=?,addr=? where num=?
 	</update>
 
 
 	<delete id="deleteOfmember" parameterType="mdto">
-		delete from members where num=#{num}
+		delete from members where num=?
 	</delete>
 	
 	
@@ -31,12 +31,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<!-- 아이디 비번 일치하면 로그인 -->
 	<select id="loginSuccess" parameterType="HashMap" resultType="int">
-		select count(*) from members where id=#{id} and pass=#{pass}
+		select count(*) from members where id=? and pass=?
 	</select>
 	
 	<!-- 이름얻는것 id받아서 name얻는것 -->
 	<select id="nameByMember" parameterType="String" resultType="String">
-		select name from members where id=#{id}
+		select name from members where id=?
 	</select>
 	
 	
